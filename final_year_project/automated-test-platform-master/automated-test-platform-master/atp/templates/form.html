@@ -1,0 +1,104 @@
+﻿<html lang="en">
+<head>
+	<title>Automated Testing Platform</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/css/main.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="body2">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <ul class="nav navbar-nav">
+			<li><p class="nav navbar-text">Name:{{username}}</p></li>
+			<li><p class="nav navbar-text">USN:{{usn}}</p></li>
+			<li><p class="nav navbar-text">Semester:{{semester}}</p></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+			
+		  </ul>
+		</div>
+	</nav>
+	<center>
+        <div class="row2" >
+			<form  class="contact1-form validate-form" action="/generate_test" method="POST" enctype="multipart/form-data">
+				<div style= "font-size: 200%; font-weight: bold; font-family: 'Times New Roman', Times, serif; ">Select Test Type: </div> 
+				<div style="text-align: left;">
+					<input type="radio" name="test_id" value="1" style="font-family:'Times New Roman', Times, serif;"> Objective Test  <br/>
+					<input type="radio" name="test_id" value="2" style="font-family:'Times New Roman', Times, serif;">  Subjective Test
+				</div>
+				<br><br>
+				<div style= "font-size: 200%; font-weight: bold; font-family: 'Times New Roman', Times, serif; ">Select Subject : </div> 
+				<div style="text-align: left;">
+					<input type="radio" name="subject_id" value="1" id="myCheck4" onclick="myFunction2()" style="font-family:'Times New Roman', Times, serif;"> Software Testing <br>
+					<input type="radio" name="subject_id" value="2" id="myCheck3" onclick="myFunction2()" style="font-family:'Times New Roman', Times, serif;"> Databases <br>
+					<input type="radio" name="subject_id" value="3" id="myCheck2" onclick="myFunction2()" style="font-family:'Times New Roman', Times, serif;">  Machine Learning <br>
+				</div><br><br>
+				
+				<button class="btn btn-success btn-lg">
+					<span>Take Test<i class="" aria-hidden="true"></i></span>
+				</button>
+					
+			</form>
+           
+        </div>
+        
+    </center>
+</body>
+
+	<!-- JavaScript -->
+    <!--<script src="../static/form-static/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../static/form-static/vendor/bootstrap/js/popper.js"></script>
+    <script src="../static/form-static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/form-static/vendor/select2/select2.min.js"></script>
+    <script src="../static/form-static/vendor/tilt/tilt.jquery.min.js"></script>-->
+    <!--<script >
+		    $('.js-tilt').tilt({
+				scale: 1.1
+			})
+		
+		function formHandler(){
+			// event handler to handle the name field
+			var nameField = document.getElementById("testname");
+			nameField.onfocus = function(){
+				if(nameField.placeholder == "Test Name"){
+					nameField.placeholder = "";
+				}
+			};
+			nameField.onblur = function(){
+				if(nameField.placeholder == ""){
+					nameField.placeholder = "Test Name";
+				}
+			};
+		}
+		// call fucntion after the window has loaded
+		window.onload = function(){
+			formHandler();
+		}
+	</script>-->
+	<!--<script>
+		function myFunction() {
+			var checkBox = document.getElementById("myCheck");
+			if (checkBox.checked == true){
+				document.getElementById("file_br").style.display="block";
+			}
+		}
+	</script>-->
+	<script>
+			function myFunction2() {
+				var checkBox2 = document.getElementById("myCheck2");
+				var checkBox3 = document.getElementById("myCheck3");
+				var checkBox4 = document.getElementById("myCheck4");
+				
+				if (checkBox2.checked == true || checkBox3.checked == true || checkBox4.checked == true){
+					document.getElementById("file_br").style.display="none";
+				}
+			}
+		</script>
+	<!--<script src="..static/js/main.js"></script>-->
+</html>

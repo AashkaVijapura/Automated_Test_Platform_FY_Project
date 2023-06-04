@@ -1,0 +1,129 @@
+body {
+    background-size: cover;
+    width: 100%;
+    font-family: "Roboto";
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: "Roboto";
+    
+    background-image: url("../images/image5.jpg"); 
+    
+
+}
+.body2 {
+    background-size: cover;
+    width: 100%;
+    font-family: "Roboto";
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: "Roboto";
+    background-image: url("../images/image5.jpg")
+}
+
+
+
+.body3 {
+    width: 100%;
+    font-family: "Monoton";
+    background-image: url("../images/image5.jpg");
+    background: linear-gradient(to top, #ffcd48 0%, #e9af02 100%);  
+} 
+.row {
+    height: 33.33%;
+    width: 101%;
+}
+.row2 {
+    height: auto;
+    width: 45%;
+    background: rgba(77, 77, 82,0.5);
+    padding: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 5%;
+}
+.row3 {
+    height: auto;
+    width: 45%;
+    background: rgba(231, 231, 233, 0.753);
+    padding: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 130%;
+}
+.btn{
+    opacity: 100%;
+
+} .btn:hover{
+    background: rgb(241, 187, 8);
+    border-color: orange;
+}
+
+.col{
+    float: left;
+    width: 50%;
+}
+.head-space2{
+    padding-right: 50px;
+    color: white;
+    
+}
+.head-space{
+    padding: 50px;
+    color: black;
+}
+/*rgba(255, 255, 255, 0.5);*/
+.content {
+    color: black;
+    background-color: transparent;
+}
+.tagline {
+    font-family: "Guci";
+    font-size: 60px;
+    color:black;
+    position: relative;
+    top: -10px;
+}
+.quote {
+    font-family: "Guci";
+    font-size: 50px;
+    color: white;
+}
+.clock{
+    color: white;
+    align-content: right;
+    font-family: "DancingF"
+}
+.left-side{
+    padding-left: 80%;
+    font-family: "Roboto";
+}
+.prompt{
+    color:black;
+    font-size: 20px;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto_Mono/RobotoMono-Light.ttf")
+}
+@font-face{
+    font-family: "Guci";
+    src: url("../fonts/Gugi/Gugi-Regular.ttf")
+}
+@font-face{
+    font-family: "DancingF";
+    src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf")
+}
+@font-face{
+    font-family: "Monoton";
+    src: url("../fonts/Monoton/Monoton-Regular.ttf")
+}
+@font-face{
+    font-family: "PressStart";
+    src: url("../fonts/East_Sea_Dokdo/EastSeaDokdo-Regular.ttf")
+}
+

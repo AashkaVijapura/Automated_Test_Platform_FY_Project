@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+	<title>{{testname}}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../static/form-static/css/main.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body class="body2" >
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <ul class="nav navbar-nav">
+			<li><p class="nav navbar-text">Name:{{username}}</p></li>
+			<li><p class="nav navbar-text">USN:{{usn}}</p></li>
+			<li><p class="nav navbar-text">Semester:{{semester}}</p></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+			
+		  </ul>
+		</div>
+	</nav>
+	<div class="contact1new">		
+		<form style="color:black" class="contact1-form validate-form" action="/output" method="POST" enctype="multipart/form-data">
+			<div class="wrap-input21 validate-input" data-validate="">
+				<h4>{{question1}}</h4>
+				<input autocomplete="off" class="input1" type="text" name="answer1" id="answer1" placeholder="One/Two Word Answer">
+			</div>
+			<div class="wrap-input21 validate-input" data-validate="">
+				<h4>{{question2}}</h4>
+				<input autocomplete="off" class="input1" type="text" name="answer2" id="answer2" placeholder="One/Two word Answer">
+			</div>
+			<div class="wrap-input21 validate-input" data-validate="">
+				<h4>{{question3}}</h4>
+				<input autocomplete="off" class="input1" type="text" name="answer3" id="answer3" placeholder="One/Two word Answe">
+			</div>
+			<div class="container-contact1-form-btn">
+				<button class="btn btn-success btn-lg">
+					<span>Submit<i class="" aria-hidden="true"></i></span>
+				</button>
+			</div>
+			<br>
+		</form>
+	</div>
+</body>
+</html>
+
+    <!-- JavaScript -->
+    <!--<script src="../static/form-static/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../static/form-static/vendor/bootstrap/js/popper.js"></script>
+    <script src="../static/form-static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/form-static/vendor/select2/select2.min.js"></script>
+    <script src="../static/form-static/vendor/tilt/tilt.jquery.min.js"></script>
+    <script src="..static/js/main.js"></script>-->

@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+	<title>{{username}}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		.vl {
+			border-left: 2px solid #ffcd48;
+			height: 150%;
+		}
+		</style>
+</head>
+<body class="body2">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <ul class="nav navbar-nav">
+			<li><p class="nav navbar-text">Name:{{username}}</p></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="/"> Exit </a></li>
+			
+		  </ul>
+		</div>
+	</nav>
+	<br>
+	<center>
+		<div style="font-family:'Times New Roman', Times, serif; "><h1>{{subjectname}}</h1></div>
+		<br>
+	</center>
+	<center>
+		<div class="row3">
+			<div>
+				<span style="font-weight: 900;">Name : </span><span>{{username}}</span><br>
+				<span style="font-weight: 900;"> USN : </span><span>{{usn}}</span><br>
+				<span style="font-weight: 900;">Semester : </span><span>{{semester}}</span>
+			</div>
+			<center>
+				<span style="font-weight: 900; font-size:larger;">YOUR SCORE </span><h5 id="fs" class="h1_beta">{{show_score}} %</h5>
+			</center>
+			<div style="text-align: center;">{{status}}</div>
+		</div>
+	</center><br><br>
+	<center>
+		<div class="row2">
+			<span  style="font-size: 150%; font-family:'Times New Roman', Times, serif">MAX SCORE : <h3 style="color: rgb(27, 73, 45)";>{{max_score}}</h3></span>
+			<br>
+			<span style="font-size: 150%; font-family:'Times New Roman', Times, serif">MEAN SCORE : <h3 style="color: rgb(199, 138, 24);">{{mean_score}}</h4></span>
+			<br>
+			<span style="font-size: 150%; font-family:'Times New Roman', Times, serif">MIN SCORE : <h3 style="color: rgb(102, 19, 13);">{{min_score}}</h5></span>
+		</div>
+	</center>
+</body>
+</html>
+
+	<script>
+		var font_s = {show_score};
+		if (font_s < 55){
+			document.getElementById("fs").style.color="red";
+		}
+		else{
+			font_s += "px";
+			document.getElementById("fs").style.fontSize=font_s;
+		}
+	</script>
+	
+ 
+	
